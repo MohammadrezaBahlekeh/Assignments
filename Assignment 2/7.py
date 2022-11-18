@@ -1,13 +1,12 @@
-fibonumber = int(input("enter the number : "))
-def fibonacci (n):
+fibonumber = int(input("enter the fibonacci sequence : "))
 
-    if n<0:
-        print("Error")
-    elif n==0:
-        return 0 
-    elif n==1:
-        return 1 
-    else:
-        return fibonacci(n-1)+fibonacci(n-2)
+a = 1
+b = 0
 
-print (fibonacci(fibonumber))
+for i in range(fibonumber):
+
+    result = a + b
+    a = b
+    b = result
+    
+    print(result)    
