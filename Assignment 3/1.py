@@ -3,7 +3,6 @@ import random
 wordsBank = ["case","motherboard","gpu","keyboard","mouse","mousepad","desk","cpu","headphone"]
 
 usermistakes = 0
-targetchar = []
 goodchar = []
 badchar = []
 
@@ -33,7 +32,7 @@ while usermistakes<6 :
 
 if usermistakes == 6:
     print("GAME OVER!!")
-if goodchar == word.split:
+if goodchar == word:
     print("you win")
     print(word)
     
